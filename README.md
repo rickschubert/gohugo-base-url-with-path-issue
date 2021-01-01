@@ -8,11 +8,15 @@ Given my base URL (`config.toml`) is http://example.org/blog - which is an URL t
 And my config.toml file includes `canonifyurls = true`
 And I have an image `example.jpg` in my `static` directory
 And I reference the image in my markdown file using `![Example image here](/example.jpg)`
+And I reference the image in my markdown file using `![Example image here](example.jpg)`
 And I reference the image in my markdown file using `![Example image here](/blog/example.jpg)`
+And I reference the image in my markdown file using `![Example image here](blog/example.jpg)`
 When I generate the website using `hugo server` (see also `public` directory for output using `hugo`)
 And I visit the example post http://localhost:1313/blog/posts/example-post/
 Then I can see that the image reference using `/example.jpg` does not work
+Then I can see that the image reference using `example.jpg` does not work
 And I can see that the image reference using `/blog/example.jpg` does work
+And I can see that the image reference using `blog/example.jpg` does not work
 ```
 
 Please note that the problem can be fixed when using `canonifyurls = true` in the `config.toml` file but I am not sure as it is desired. It plays fine with the ananke theme, but with other themes i.e. with anubis it then causes other links to break, such as the archive URL.

@@ -14,7 +14,9 @@
       
       <guid>http://example.org/blog/posts/example-post/</guid>
       <description>Image referenced below with the following markdown: [Example image here](/example.jpg)
-Image referenced below with the following markdown: [Example image here](/blog/example.jpg)</description>
+Image referenced below with the following markdown: [Example image here](example.jpg)
+Image referenced below with the following markdown: [Example image here](/blog/example.jpg)
+Image referenced below with the following markdown: [Example image here](blog/example.jpg)</description>
     </item>
     
   </channel>

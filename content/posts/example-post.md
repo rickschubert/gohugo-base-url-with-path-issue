@@ -8,7 +8,16 @@ Image referenced below with the following markdown: `[Example image here](/examp
 
 ![Example image here](/example.jpg)
 
+Image referenced below with the following markdown: `[Example image here](example.jpg)`
+
+![Example image here](example.jpg)
+
 Image referenced below with the following markdown: `[Example image here](/blog/example.jpg)`
 
 ![Example image here](/blog/example.jpg)
+
+
+Image referenced below with the following markdown: `[Example image here](blog/example.jpg)`
+
+![Example image here](blog/example.jpg)
 
